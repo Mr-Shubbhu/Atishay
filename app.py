@@ -101,6 +101,8 @@ def main():
             if st.button("Download Matching Data as CSV"):
                 if filename and file_path:
                     full_path = f"{file_path}/{filename}"
+                    import os
+                    os.makedirs(file_path, exist_ok=True)
                     df3.to_csv(full_path, index=False)
                     st.success(f"Matching data saved at {full_path}")
 
