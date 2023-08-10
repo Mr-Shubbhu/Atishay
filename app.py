@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 
+st.set_page_config(page_title="Matching Data App")
+
 # Streamlit layout
 st.sidebar.title("Extract Matching data")
 page_select = st.sidebar.selectbox("Go to", ["Based on Column and Unique Rows",
@@ -102,5 +104,4 @@ if page_select == "Based on Column only":
 
 # Run the Streamlit app
 if __name__ == "__main__":
-    st.set_page_config(page_title="Matching Data App")
-    st.sidebar.header("Matching Data App")
+    main()
