@@ -105,5 +105,5 @@ def main():
                     st.success(f"Matching data saved at {full_path}")
 
 # Run the Streamlit app
-    if __name__ == "__main__":
-        main()
+if __name__ == "__main__":
+    main()
